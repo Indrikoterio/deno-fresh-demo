@@ -2,18 +2,27 @@
 
 This demo application is based on Deno and Fresh. Deno is a Javascript runtime, which is meant to be an improvement on NodeJS. Fresh is a new web framework built on Deno.
 
-This demo displays a table called Visitors. Each row of the table displays a first name and a family name, followed by an edit button and a delete button. Table data is saved in a Key/Value database, Denokv.
+This demo displays a table called Visitors. Each row of the table displays a first name and a family name, followed by an edit button and a delete button.
+
+Table data is saved in a Key/Value database, Denokv.
 
 Tailwind, a CSS framework, is used for styling.
 
 <img src="visitors.png">
 
-## Set-up
+## Installation
 
 To install Deno on Mac or Linux, open a terminal window and run:
 
 <pre>
 curl -fsSL https://deno.land/install.sh | sh</pre>
+
+In Windows PowerShell you can run:
+
+<pre>
+irm https://deno.land/install.ps1 | iex</pre>
+
+[Reference](https://docs.deno.com/runtime/getting_started/installation/)
 
 To create a Fresh application:
 
@@ -44,18 +53,24 @@ Stuck? Join our Discord https://discord.gg/deno
 Happy hacking! 🦕
 </pre>
 
-To clone this demo, run the following command:
+## Clone this Demo
+
+To clone this demo, open a terminal window and run the following command:
 
 <pre>
 git clone git@github.com:Indrikoterio/deno-fresh-demo.git</pre>
 
+Move to the newly created folder:
 
-### Usage
+<pre>cd deno-fresh-demo</pre>
 
-To start the project:
+Start the server running:
+
+<pre>deno run start</pre>
+
+You will see:
 
 ```
-$ deno run start
 Task start deno run -A --watch=static/,routes/,api/,api/visitors/ --unstable-kv dev.ts
 Watcher Process started.
 The manifest has been generated for 4 routes and 3 islands.
@@ -64,6 +79,8 @@ The manifest has been generated for 4 routes and 3 islands.
     Local: http://localhost:8000/
 
 ```
+
+Open your browser to localhost:8000 to view the Visitor table.
 
 ## Developer
 
