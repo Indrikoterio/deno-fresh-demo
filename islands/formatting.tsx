@@ -10,7 +10,8 @@ import { VNode } from "preact";
 
 // formatEditableRows()
 //
-// Format array of data into editable rows, by calling formatEditableRow().
+// Formats an array of data into editable rows, by calling
+// formatEditableRow() for each name.
 //
 // Params:
 //     array of SimpleNames
