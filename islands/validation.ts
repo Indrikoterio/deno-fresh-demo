@@ -6,8 +6,8 @@
 
 // checkCharacters
 //
-// Returns true if the given string (str) contains only unicode
-// letters (including accents), spaces, apostrophes (Miles O’Brian),
+// Returns true if the given string contains only unicode letters
+// (including accents), spaces, apostrophes (Miles O’Brian),
 // and hypens. (Jean-Luc Picard)
 //
 // Reference:
